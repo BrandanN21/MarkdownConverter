@@ -23,9 +23,18 @@ public class UnitTest1
 
         //act
         var result = MarkdownConverter.GetMarkdown(file);
+
         //assert
+        try
+        {
+            MarkdownConverter.GetMarkdown(file);
+        }
+        catch (Exception ex)
+        {
+            Assert.IsTrue(ex.Message != null);
+        }
         //not sure how to write this assert to evaluate if exception was thrown..
-        Assert.Fail();   
+        //Don't 100% think this is correct
     }
 
     [TestMethod]

@@ -45,7 +45,6 @@ public class MarkdownConverter
         }
         catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
             throw new Exception(ex.Message);
         }
 
