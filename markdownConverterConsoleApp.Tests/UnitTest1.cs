@@ -7,7 +7,7 @@ public class UnitTest1
     public void GetMarkdown_Successful()
     {
         //arrange
-        var file = @"/users/brandannaef/developer/mailchimp-interview/markdown";
+        var file = @"../../../Files/markdown";
         //act
         var result = MarkdownConverter.GetMarkdown(file);
 
@@ -19,7 +19,7 @@ public class UnitTest1
     public void GetMarkdown_Failure()
     {
         //arrange
-        var file = @"/users/brandannaef/developer/mailchimp-i";
+        var file = @"../../../Files/markd";
 
         //act
         var result = MarkdownConverter.GetMarkdown(file);

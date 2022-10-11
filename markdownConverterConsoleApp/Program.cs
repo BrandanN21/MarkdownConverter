@@ -16,7 +16,7 @@ public class MarkdownConverter
 
     static async Task MainAsync()
     {
-        var file = @"/users/brandannaef/developer/mailchimp-interview/markdown";
+        var file = @"../../../Files/markdown";
         try
         {
             var lines = await GetMarkdown(file);
